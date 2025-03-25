@@ -106,15 +106,17 @@ h6 {
   margin-right: 220px;
   height: 40px;
 }
-.navmenu ul li a:hover{
+.navmenu ul li a:hover,
+.navmenu ul li a.active {
   color: black;
   background: white;
   border-radius: 50px;
-  /* padding: 10px; */
- top: 5px;
- bottom: 5px;
- left: 5px;
- right: 5px;
+  display: inline-block;  /* Allows height & line-height */
+  text-align: center;     /* Centers horizontally */
+  line-height: 35px;      /* Matches height for vertical centering */
+  height: 35px;
+  margin: 5px 2px;
+  padding: 0 15px;
 }
 
 .navmenu ul li {
@@ -1719,6 +1721,10 @@ section,
 
 /* End of pricing section */
 @media (max-width: 768px) {
+
+  .services .service-item {
+  top: 30px !important;
+}
   .demo-section .right h2 {
     font-weight: 400;
     color: black;
